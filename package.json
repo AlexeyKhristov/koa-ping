@@ -1,0 +1,30 @@
+{
+  "name": "koa-ping",
+  "version": "0.1.0",
+  "description": "Make koa apps check internal status and health. Inspired by express-ping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexeyKhristov/koa-ping.git"
+  },
+  "keywords": [
+    "koa",
+    "generators",
+    "middleware",
+    "health",
+    "ping",
+    "api"
+  ],
+  "author": "Alexey Khristov <sword.and.digit@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexeyKhristov/koa-ping/issues"
+  },
+  "homepage": "https://github.com/AlexeyKhristov/koa-ping",
+  "dependencies": {
+    "node-df": "^0.1.1"
+  }
+}
