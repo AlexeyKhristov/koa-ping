@@ -14,11 +14,10 @@ var health = require('koa-ping');
 var koa = require('koa');
 
 var app = koa();
-app.use(health());
 
-...
-app.use(health.ping()); // this is the only addition
-...
+app.use(health());
+// Or use a custom url
+// app.use(health('/nonpublic/ping'));
 
 app.listen(3000);
 ```
