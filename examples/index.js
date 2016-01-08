@@ -2,6 +2,7 @@
 
 var koa = require("koa");
 var health = require("../index");
+var appinfo = require('./package.json');
 
 var app = koa();
 
@@ -9,9 +10,9 @@ var app = koa();
 // app.use(health());
 
 // OR using custom URL
-var customUrl = ''
+var customUrl = '
 customUrl = '/nonpublic/ping';
-app.use(health(customUrl));
+app.use(health(appinfo, customUrl));
 
 app.listen(3000);
 
