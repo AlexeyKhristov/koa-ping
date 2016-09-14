@@ -212,7 +212,7 @@ Configuration
 You don't need to configure anything. By default, a `/ping` endpoint will be added to your routes, but you can pass the _ping_ endpoint to the middeware simply doing:
 
 ```js
-app.use(health.ping('/custompath'));
+app.use(health('/custompath'));
 ```
 
 Notes
